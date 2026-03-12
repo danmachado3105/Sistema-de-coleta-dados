@@ -100,10 +100,12 @@
 
                     <label for="city">Cidade:</label>
                     <input id="city" type="text" name="city" required>
+
                 </fieldset>
 
                 <fieldset>
                     <legend>Hábitos</legend>
+
                     <p>Redes Sociais:</p>
                     <input id="social" type="checkbox" name="social" value="instagram">
                     <label for="social">Instagram</label>
@@ -120,6 +122,7 @@
                     <input id="social4" type="checkbox" name="social" value="tiktok">
                     <label for="social4">TikTok</label>
                     <br>
+
                     <label for="MusicStyle">Estilo Musical:</label>
                     <input list="styletypes" id="MusicStyle" name="UserMusicStyle" type="text">
                     <datalist id="styletypes">
@@ -129,9 +132,33 @@
                         <option value="Sertanejo">
                     </datalist>
                     <br>
+
                     <label for="favoritecolor">Cor Favorita:</label>
                     <input type="color" name="UserFavoriteColor" id="favoritecolor">
+
                 </fieldset>
+                <br>
+                <fieldset>
+                
+                    <legend>Opinião</legend>
+
+                <p>O que você acha da qualidade de nosso serviço?</p>
+                <input type="radio" name="opinion" id="opiniao1">
+                <label for="opiniao1">Ótima</label>
+                <br>
+                <input type="radio" name="opinio" id="opiniao2">
+                <label for="opiniao2">Boa</label>
+                <br>
+                <input type="radio" name="opinion" id="opiniao3">
+                <label for="opiniao3">Regular</label>
+                <br>
+                <input type="radio" name="opinion" id="opiniao4">
+                <label for="opiniao4">Ruim</label>
+                <br>
+                <label for="comment">Escreva sua opinião:</label>
+                <textarea name="usecomment" id="comment" placeholder="Digite aqui..."></textarea>
+
+                </fieldset>    
 
                 <button type="submit">Enviar</button>
 
