@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesquisa Culturama</title>
+    <title>Pesquisa Online</title>
 </head>
 <body>
     <header>
@@ -13,48 +13,47 @@
         <section>
             <form action="" method="get">
                 
-                <!-- <fieldset>
+                <fieldset>
 
                     <legend>Dados Pessoais</legend>
-                    <label for="UserName">Nome</label>
-                    <input type="text" name="UserName" required> 
+                    <label for="UserName">Nome:</label>
+                    <input id="UserName" type="text" name="UserName" required> 
                     <br>              
-                    <label for="age">idade</label>
-                    <input type="number" name="age" min="12" max="100" required> 
+                    <label for="age">idade:</label>
+                    <input id="age" type="number" name="age" min="12" max="100" required> 
                     <br>
-                    <label for="BirthDate">Data de Nascimento</label>
-                    <input type="date" name="BirthDate" required> 
+                    <label for="BirthDate">Data de Nascimento:</label>
+                    <input id="BirthDate" type="date" name="BirthDate" required> 
                     <br>
-                    <label for="Email">E-mail</label>
-                    <input type="email" name="Email" required>
+                    <label for="Email">E-mail:</label>
+                    <input id="Email" type="email" name="Email" required>
                     <br>
-                    <label for="phone">Telefone</label>
-                    <input type="tel" name="phone" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífen" required>
+                    <label for="phone">Telefone:</label>
+                    <input id="phone" type="tel" name="phone" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífen" required>
                     <br>
-                    <label for="Image">Upload de Foto</label>
-                    <input type="file" accept="image/*" name="Image" required>
+                    <label for="Image">Foto de Perfil:</label>
+                    <input id="Image" type="file" accept="image/*" name="Image" required>
                     <br>
-                    <input type="">
 
-                </fieldset> -->
+                </fieldset> 
                 
                 <fieldset>
                     <legend>Perfil</legend>
 
                     <p>Gênero:</p>
-                    <input type="radio" name="gender" value="feminino">
+                    <input id="gender" type="radio" name="gender" value="feminino">
                     <label for="gender">Feminino</label>
 
-                    <input type="radio" name="gender" value="masculino">
-                    <label for="gender">Masculino</label>
+                    <input id="gender1" type="radio" name="gender" value="masculino">
+                    <label for="gender1">Masculino</label>
 
-                    <input type="radio" name="gender" value="PrefiroNaoInformar">
-                    <label for="gender">Prefiro não informar</label>
+                    <input id="gender2" type="radio" name="gender" value="PrefiroNaoInformar">
+                    <label for="gender2">Prefiro não informar</label>
 
                     <br>
 
-                    <label for="maritalStatus">Estado Cívil</label>
-                    <select name="maritalStatus" required>
+                    <label for="maritalStatus">Estado Cívil:</label>
+                    <select id="maritalStatus" name="maritalStatus" required>
                         <option value="nada">Selecione...</option>
                         <option value="Casado">Casado</option>
                         <option value="Solteiro">Solteiro</option>
@@ -66,7 +65,7 @@
                     <br>
 
                     <label for="states">Estado:</label>
-                    <select name="States" required>
+                    <select id="states" name="States" required>
                         <option value="nada">Selecione...</option>
                         <option value="Acre">Acre</option>
                         <option value="Alagoas">Alagoas</option>
@@ -100,7 +99,38 @@
                     <br>
 
                     <label for="city">Cidade:</label>
-                    <input type="text" name="city" required>
+                    <input id="city" type="text" name="city" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Hábitos</legend>
+                    <p>Redes Sociais:</p>
+                    <input id="social" type="checkbox" name="social" value="instagram">
+                    <label for="social">Instagram</label>
+                    <br>
+                    <input id="social1" type="checkbox" name="social" value="facebook">
+                    <label for="social1">Facebook</label>
+                    <br>
+                    <input id="social2" type="checkbox" name="social" value="linkedin">
+                    <label for="social2">Linkedin</label>
+                    <br>
+                    <input id="social3" type="checkbox" name="social" value="X">
+                    <label for="social3">X (Antigo Twitter)</label>
+                    <br>
+                    <input id="social4" type="checkbox" name="social" value="tiktok">
+                    <label for="social4">TikTok</label>
+                    <br>
+                    <label for="MusicStyle">Estilo Musical:</label>
+                    <input list="styletypes" id="MusicStyle" name="UserMusicStyle" type="text">
+                    <datalist id="styletypes">
+                        <option value="rock">
+                        <option value="pop">
+                        <option value="Samba">
+                        <option value="Sertanejo">
+                    </datalist>
+                    <br>
+                    <label for="favoritecolor">Cor Favorita:</label>
+                    <input type="color" name="UserFavoriteColor" id="favoritecolor">
                 </fieldset>
 
                 <button type="submit">Enviar</button>
