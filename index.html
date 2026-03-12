@@ -12,36 +12,46 @@
     <main>
         <section>
             <form action="" method="get">
-                <fieldset>
-                    
+                
+                <!-- <fieldset>
+
                     <legend>Dados Pessoais</legend>
-                    <!--Nome do usuario-->   
                     <label for="UserName">Nome</label>
                     <input type="text" name="UserName" required> 
-                    <br>
-                    <!--Idade-->                
+                    <br>              
                     <label for="age">idade</label>
                     <input type="number" name="age" min="12" max="100" required> 
                     <br>
-                    <!--Data de nascimento-->
                     <label for="BirthDate">Data de Nascimento</label>
                     <input type="date" name="BirthDate" required> 
                     <br>
-                    <!--Email-->
                     <label for="Email">E-mail</label>
                     <input type="email" name="Email" required>
                     <br>
-                    <!--Telefone-->
                     <label for="phone">Telefone</label>
                     <input type="tel" name="phone" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hífen">
                     <br>
-                    <!--Foto-->
                     <label for="Image">Upload de Foto</label>
                     <input type="file" accept="image/*" name="Image">
                     <br>
+                    <input type="">
 
-                </fieldset>
+                </fieldset> -->
                 
+                <fieldset>
+                    <legend>Perfil</legend>
+
+                    <p>Gênero:</p>
+                    <input type="radio" name="gender" value="feminino">
+                    <label for="gender">Feminino</label>
+
+                    <input type="radio" name="gender" value="masculino">
+                    <label for="gender">Masculino</label>
+
+                    <input type="radio" name="gender" value="PrefiroNaoInformar">
+                    <label for="gender">Prefiro não informar</label>
+                </fieldset>
+
                 <button type="submit">Enviar</button>
 
             </form>
